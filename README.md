@@ -21,14 +21,14 @@ CREATE TABLE Products(ID INT PRIMARY KEY, Name NVARCHAR(50) NULL);
 CREATE TABLE Category(ID INT PRIMARY KEY, Name NVARCHAR(50) NULL);
 CREATE TABLE CategoryProducts (Product_ID INT NOT NULL, Category_ID INT NOT NULL);
 ```
-**Заполняем их данными**
+- **Заполняем их данными**
 
 ```SQL
 INSERT INTO Products VALUES(1, 'Note 11 Pro'), (2, 'Lenovo Legion 5'), (3, 'Galaxy S7');
 INSERT INTO Category VALUES(1, 'Phones'), (2, 'Laptops');
 INSERT INTO CategoryProducts VALUES(1, 1), (2, 2), (3, 1);
 ```
-**Выводим имя продукта и имя категории**
+- **Выводим имя продукта и имя категории**
 
 ```SQL
 SELECT P.Name, C.Name
